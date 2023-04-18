@@ -1,0 +1,26 @@
+<div class="position-absolute top-50 start-50 translate-middle bg-dark text-black text-center rounded p-5">
+  <h1 class="text-white mb-5">Palindromo</h1>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Valor</span>
+    <div class="form-floating">
+      <input type="text" class="form-control text-black" id="floatingInputGroup1" placeholder="Username" [(ngModel)]="text">
+      <label for="floatingInputGroup1 text-black">Escreva o valor aqui!</label>
+    </div>
+  </div>
+
+  <button class="btn bg-white mb-3" (click)="isPalindromo()">Calcular</button>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Resultado</span>
+    <input type="text" class="rounded-end form-control" disabled [(ngModel)]="resultado">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Antes</span>
+    <input type="text" class="rounded-end form-control" disabled [(ngModel)]="texto">
+
+    <span class="input-group-text ms-5">Depois</span>
+    <input type="text" class="form-control disabled" [(ngModel)]="inverso1">
+  </div>
+  </div>
